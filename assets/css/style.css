@@ -1,0 +1,239 @@
+/* --------------- html/body --------------- */
+/* :root:before {
+	content: url(../images/about-img.jpeg) url(../images/psychic-game.png)
+		url(../images/rupee-collector.png) url(../images/star-wars-rpg.png)
+		url(../images/pixar-trivia.png) url(../images/api-populator.png)
+		url(../images/liri-node.gif) url(../images/bamazon-manager.gif)
+		url(../images/friend-finder.png) url(../images/mongo-news.png)
+		url(../images/monopoly.png) url(../images/codebook.gif);
+	visibility: hidden;
+	position: absolute;
+	left: -999em;
+} */
+/* #psychic-img {
+	background-image: url(../images/psychic-game.png);
+}
+#rupee-img {
+	background-image: url(../images/rupee-collector.png);
+} */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/darkness.png);
+	overflow: hidden;
+}
+.overflow-auto {
+	overflow: auto;
+}
+#nav {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+#btn,
+#rotate,
+#rotate-back {
+	border: none;
+}
+#btn:focus,
+#rotate:focus,
+#rotate-back:focus {
+	outline: none;
+}
+#heading {
+	margin-top: 3.5rem;
+}
+
+/* #nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+} */
+#max-width {
+	max-width: 980px;
+	padding-bottom: 0.3rem;
+}
+#dropdown-menu {
+	border: none;
+}
+.dropdown-menu a,
+.dropdown-menu p {
+	margin-bottom: 3px;
+	color: #999c99;
+}
+.dropdown-menu a:hover,
+.dropdown-menu p:hover {
+	background-color: #343a40;
+	color: #d2d1d1;
+}
+#heading {
+	padding: 10px;
+	/* margin-top: 3.5rem; */
+}
+/* .main-container {
+    margin-bottom: 67px;
+} */
+.container {
+	min-width: fit-content;
+}
+.about-container {
+	padding-bottom: 0.5rem;
+}
+/* .contact-form {
+    margin-bottom: 50px;
+} */
+#contact-container {
+	/* height: fit-content; */
+	min-width: 100%;
+}
+#submit-container {
+	display: none;
+}
+#asap {
+	/* width: 80%; */
+	text-align: center;
+	/* margin-left: auto;
+    margin-right: auto; */
+	padding: 10rem;
+	line-height: 5rem;
+	margin-bottom: 0;
+}
+.btn-outline-light {
+	margin-bottom: 1rem;
+}
+.card-header {
+	font-size: 30px;
+}
+.load-gif {
+	/* position: fixed; */
+	height: 45vw;
+	max-height: 40rem;
+	/* width: 100%; */
+	z-index: 1;
+	background: url(../images/Preloader_31.gif) center center no-repeat
+		rgba(255, 255, 255, 1);
+	/* background-size: 5vw; */
+}
+/* .port-img {
+    display: none;
+} */
+#about-img {
+	width: 400px;
+	margin-right: 1rem;
+}
+.port-imgs {
+	height: 35rem;
+	max-width: 100%;
+	background-size: contain;
+}
+p {
+	line-height: 25px;
+}
+.header {
+	text-decoration: none;
+	color: white;
+}
+.contact-heads {
+	color: #999d9d;
+}
+#name-input-head {
+	margin-top: 5px;
+}
+#nameInput,
+#emailInput,
+#messageInput {
+	background-image: url(../images/darkness.png);
+	border: 0px;
+}
+#footer {
+	margin-top: 3.2rem;
+}
+#contact-footer {
+	margin-top: 1.3rem;
+}
+#rotate {
+	animation: rotate 0.5s;
+}
+#rotate-back {
+	animation: rotate-back 0.5s;
+}
+@keyframes rotate {
+	from {
+		transform: rotate(180deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+@keyframes rotate-back {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
+}
+@media screen and (max-height: 690px) {
+	html,
+	body {
+		overflow: auto;
+	}
+	/* #nav {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    #heading {
+        margin-top: 3.5rem;
+    } */
+}
+@media screen and (max-width: 845px) {
+	#asap {
+		padding: 19vw;
+		font-size: 4.7vw;
+		line-height: 9vw;
+	}
+}
+@media screen and (max-width: 767px) {
+	html,
+	body {
+		overflow: auto;
+	}
+	/* #nav {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    #heading {
+        margin-top: 3.5rem;
+    } */
+	#about-img,
+	.container {
+		min-width: 100%;
+		margin-bottom: 1rem;
+	}
+	.load-gif {
+		background-size: 5vw;
+	}
+	.btn-outline-light {
+		margin-bottom: 0;
+	}
+	/* .container {
+        min-width: 100%;
+    } */
+}
+@media screen and (max-width: 640px) {
+	.card-header {
+		font-size: 16px;
+	}
+	#asap {
+		padding: 12vw;
+		font-size: 9vw;
+		line-height: 15vw;
+	}
+}

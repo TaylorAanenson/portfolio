@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <title>Taylor Aanenson's Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="nav">
+        <a class="navbar-brand" href="index.html">Taylor Aanenson</a>
+        <button class="navbar-toggler" id="btn" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <div class="dropdown-menu bg-dark" id="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-white" href="games.html">
+                            <p>Games</p>
+                        </a>
+                        <a class="dropdown-item text-white" href="apps.html">
+                            <p>Apps</p>
+                        </a>
+                        <a class="dropdown-item text-white" href="projects.html">
+                            <p>Projects</p>
+                        </a>
+                    </div>
+                </li>
+                <a class="nav-item nav-link" href="https://github.com/TaylorAanenson" target="_blank">GitHub</a>
+                <a class="nav-item nav-link" href="https://docs.google.com/document/d/1Q4ta38Cl6Xf5Aha4VJpnuXiDddyf28tfxS4ud3Bo9A8/edit?usp=sharing"
+                    target="_blank">Resume</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <h1 id="heading" class="text-center text-dark">Contact</h1>
+    <div class="main-container container contact-form" id="max-width">
+        <div class="card text-white bg-dark mb-3" id="max-width">
+            <div id="contact-container" class="container">
+                <form role="form" class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label id="name-input-head" class="contact-heads" for="nameInput">Name</label>
+                        <input type="text" name="fullname" class="form-control text-white" id="nameInput" placeholder="John Smith"
+                            autocomplete="on" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            I would like to know who you are
+                        </div>
+                    </div>
+                    <div class="form-group" id="email">
+                        <label class="contact-heads" for="emailInput">Email</label>
+                        <input type="email" class="form-control text-white" id="emailInput" placeholder="email@example.com"
+                            autocomplete="on" required>
+                        <div class="valid-feedback" id="valid-email">
+                            Awesome!
+                        </div>
+                        <div class="invalid-feedback" id="invalid-email">
+                            I would also like to know how to reach you
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="contact-heads" for="messageInput">Message</label>
+                        <textarea class="form-control text-white" id="messageInput" rows="8" required></textarea>
+                        <div class="valid-feedback">
+                            Thanks!
+                        </div>
+                        <div class="invalid-feedback">
+                            I would like to know if you have something to tell me
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-light">Submit</button>
+                </form>
+            </div>
+            <div class="container" id="submit-container">
+                <h1 id="asap">Thanks for contacting me!<br>I will get back to you ASAP!</h1>
+            </div>
+        </div>
+    </div>
+    <div id="contact-footer">
+        <p id="copyright" class="text-center text-dark">© Copyright</p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/index.js"></script>
+    <script src="assets/javascript/firebase.js"></script>
+</body>
+
+</html>
